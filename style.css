@@ -1,0 +1,242 @@
+/* Google homepage by David*/
+ 
+/* Generique*/
+div
+{
+    margin: 5px;
+}
+
+
+
+a{
+	/*border: 1px black solid;*/
+    font-family: arial,sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+p{
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    color: rgb(169, 171, 173);
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=submit]:hover {
+  border: 1px black solid;
+}
+
+/* Header*/
+
+#conteneur_header /*conteneur du haut*/
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 50px; 
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+   
+}
+
+
+.link{
+	font-size: 13px;
+	color : rgba(0,0,0,0.87);
+	font-family: arial,sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.connexion{
+	background-color: rgb(66,133,244);
+	color : white;
+	border:  none;
+	height: 28px;
+	min-width: 90px;
+}
+
+#app
+{
+    height: 30px;
+
+}
+
+#app:hover{
+    cursor: pointer;
+}
+
+/* Header*/
+
+
+#conteneur_body /*conteneur du milieu*/
+{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: nowrap;*/
+    height: 500px; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+#conteneur_search /*conteneur du milieu*/
+{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    height: 44px; 
+    justify-content: space-between;
+    align-items: center;
+    border: 1px grey solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 24px;
+    width: 500px;
+    border-color: rgb(223, 225, 229);
+
+}
+
+#conteneur_search:hover{
+    box-shadow: 2px 2px 2px rgb(223, 223, 223);
+}
+
+#conteneur_body_button /*conteneur des boutons search*/
+{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.search{
+	margin: 11px 4px;
+    border-radius: 3px;
+}
+#app
+{
+    height: 30px;
+
+}
+
+#search_logo{
+    height: 20px;
+}
+
+/* Tooltip text */
+.element_input .tooltiptext {
+  visibility: hidden;
+  width: 175px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border: 1px white solid;
+  font-size: 12px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 10px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.element_input:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+#search_input{
+    width: 100%;
+}
+
+
+.element_input_2
+{
+    flex: 1;
+    display:flex;
+    height: 90%;
+
+}
+.search{ /*buttons*/
+    height: 36px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    width : 150px;
+}
+
+
+/* Header*/
+
+#conteneur_footer /*conteneur du bas*/
+{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.foot{
+    
+    margin: 0;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color : rgb(228, 228, 228);
+    padding-left: 30px;
+    font-size: 16px;
+
+}
+
+#conteneur_footi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 40px; 
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+
+.flink{
+    font-size: 13px;
+    color : black;
+    font-family: arial,sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+}

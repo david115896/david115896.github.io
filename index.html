@@ -4,10 +4,10 @@
                 <!-- En-tête de la page -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+
         <title>Google homepage by David</title>
         <style type="text/css">
-            body{margin:40px auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}
-
         </style>
 
         
@@ -15,20 +15,59 @@
     <body cz-shortcut-listen="true">
 
     	<header>
-    		<div>
-    			<a href="https://mail.google.com/mail/?tab=wm&ogbl" title="Vous ne le regretterez pas !">Gmail</a>
-    			<a href="https://www.google.fr/imghp?hl=fr&tab=wi&ogbl">Images</a>
-                <img src="Images/app.png" title="Applications Google" />
-    			
-    			<button>Connexion</button>
+    		<div id="conteneur_header">
+                <div class="element_header"> <a class="link" href="https://mail.google.com/mail/?tab=wm&ogbl" title="Vous ne le regretterez pas !">Gmail</a> </div>
+                <div class="element_header"> <a class="link" href="https://www.google.fr/imghp?hl=fr&tab=wi&ogbl">Images</a> </div>
+    			<div class="element_header">  <img src="Images/app.png" title="Applications Google" id="app"/> </div>
+                <div class="element_header">  <button class="connexion" href="https://accounts.google.com/ServiceLogin?hl=fr&amp;passive=true&amp;continue=https://www.google.fr/">Connexion</button> </div>
 
     		</div>
     	</header>  
 
-        
-    <footer>
-    	
+    	<section>
+	        <div id="conteneur_body"> 
+	            <div class="element_body"> <img src="Images/google_logo.png" id="logo"/> </div>
+	            <div class="element_body">
+	            	
+	            	<form method="post" action="traitement.php">
+	            		<div id="conteneur_search" >
+	            			<div class="element_input">  <img src="Images/search.png" id="search_logo"/> </div>
+	            			<p><div class="element_input_2"> <input type="text" name="search_txt" id="search_input" maxlength="2048" autofocus /> </div></p>
+	            			<div class="element_input">  <img src="Images/micro.png" title="Utiliser la recherche vocale" id="micro"/> <span class="tooltiptext">Utiliser la recherche vocale</span> </div>
+	            		</div>
+	            	
+			            <div id="conteneur_body_button">
+			                <p><div class="element_header">  <input type="submit" class="search" value="Recherche Google"> </div>
+			                <div class="element_header">  <input type="submit" class="search" value="J'ai de la chance"> </div></p>
+			            </div>
+	            	</form>
+	            </div>
+	        </div>
+        </section>
 
-    </footer>
+	    <footer>
+	    	<div id="conteneur_footer">
+	    		<div class="foot"> 
+	    			<div> <p>France</p> </div>
+	    		</div>
+	    		<div id="conteneur_footi">
+	    			<div>
+	    				<a class="flink" href="https://www.google.fr/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1">Publicité</a>
+	    				<a class="flink" href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1">Entreprise</a>
+	    				<a class="flink" href="https://www.google.fr/intl/fr_fr/about/?utm_source=google-FR&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1">À propos</a>
+	    				<a class="flink" href="//google.com/search/howsearchworks/?fg=1"> Comment fonctionne la recherche Google&nbsp;? </a>
+	    			</div>
+	    			<div>
+	    				<a class="flink" href="https://support.google.com/websearch?p=fr_consumer_info&amp;hl=fr&amp;fg=1">Info consommateurs</a>
+	    				<a class="flink" href="https://policies.google.com/privacy?fg=1">Confidentialité</a>
+	    				<a class="flink" href="https://policies.google.com/terms?fg=1">Conditions</a>
+	    				<a class="flink" href="https://www.google.fr/preferences?hl=fr">Paramètres</a>
+	    			</div>
+	    		
+	    		</div>
+
+	    	</div>
+
+	    </footer>
     </body>
 </html>
